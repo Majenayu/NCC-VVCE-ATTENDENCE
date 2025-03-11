@@ -18,6 +18,8 @@ app.use(express.json());
 app.use(express.static(__dirname));
 app.use("/uploads", express.static(path.join(__dirname, "uploads"))); // Serve uploaded images
 app.use("/", routes);
+app.use(cors({ origin: "*" })); // Allow all origins
+
 
 // MongoDB Connection
 mongoose.connect(process.env.MONGO_URI, { serverSelectionTimeoutMS: 5000 })
