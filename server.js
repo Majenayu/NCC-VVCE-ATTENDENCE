@@ -9,7 +9,8 @@ const bcrypt = require("bcryptjs");
 const routes = require("./routes");
 
 const app = express();
-const PORT = 10000;
+const PORT = process.env.PORT || 10000;
+
 
 // Middleware
 app.use(cors());
