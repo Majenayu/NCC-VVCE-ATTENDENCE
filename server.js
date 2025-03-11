@@ -19,7 +19,7 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads"))); // Serve u
 app.use("/", routes);
 
 // MongoDB Connection
-mongoose.connect("mongodb+srv://Maj:Maj@ayu.daaxx.mongodb.net/AttendanceDB?retryWrites=true&w=majority", {
+mongoose.connect(process.env.MONGO_URI, { serverSelectionTimeoutMS: 5000 })
     serverSelectionTimeoutMS: 5000 // Wait for 5 seconds before failing
 })
 .then(() => console.log("Connected to MongoDB"))
