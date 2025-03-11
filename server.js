@@ -9,8 +9,7 @@ const bcrypt = require("bcryptjs");
 const routes = require("./routes");
 
 const app = express();
-const PORT = process.env.PORT || 10000;
-
+const PORT = 3000;
 
 // Middleware
 app.use(cors());
@@ -18,13 +17,11 @@ app.use(express.json());
 app.use(express.static(__dirname));
 app.use("/uploads", express.static(path.join(__dirname, "uploads"))); // Serve uploaded images
 app.use("/", routes);
-app.use(cors({ origin: "*" })); // Allow all origins
-
 
 // MongoDB Connection
-mongoose.connect("mongodb+srv://Maj:Maj@ayu.daaxx.mongodb.net/AttendanceDB?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://Maj:Maj@ayu.daaxx.mongodb.net/AttendanceDB?retryWrites=true&w=majority", {
     serverSelectionTimeoutMS: 5000 // Wait for 5 seconds before failing
-
+})
 .then(() => console.log("Connected to MongoDB"))
 .catch(err => console.error("MongoDB Connection Error:", err));
 
