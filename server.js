@@ -24,7 +24,7 @@ app.use(cors({ origin: "*" })); // Allow all origins
 // MongoDB Connection
 mongoose.connect(process.env.MONGO_URI, { serverSelectionTimeoutMS: 5000 })
     serverSelectionTimeoutMS: 5000 // Wait for 5 seconds before failing
-})
+)
 .then(() => console.log("Connected to MongoDB"))
 .catch(err => console.error("MongoDB Connection Error:", err));
 
