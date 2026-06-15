@@ -4,11 +4,16 @@
 
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![HTML](https://img.shields.io/badge/HTML-40.6%25-red?style=flat-square)
-![CSS](https://img.shields.io/badge/CSS-33.8%25-blue?style=flat-square)
-![JavaScript](https://img.shields.io/badge/JavaScript-25.6%25-yellow?style=flat-square)
-![Node.js](https://img.shields.io/badge/Node.js-Express-green)
-![MongoDB](https://img.shields.io/badge/Database-MongoDB-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Node.js](https://img.shields.io/badge/Node.js-v14+-green)
+![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-brightgreen)
+![Express](https://img.shields.io/badge/Express-4.21-lightgrey)
+![Stars](https://img.shields.io/github/stars/Majenayu/NCC-VVCE-ATTENDENCE?style=social)
+![Forks](https://img.shields.io/github/forks/Majenayu/NCC-VVCE-ATTENDENCE?style=social)
+![Issues](https://img.shields.io/github/issues/Majenayu/NCC-VVCE-ATTENDENCE)
+![Last Commit](https://img.shields.io/github/last-commit/Majenayu/NCC-VVCE-ATTENDENCE)
+![VVCE](https://img.shields.io/badge/Institution-VVCE-orange)
+![NCC](https://img.shields.io/badge/For-NCC_Cadets-blue)
 
 **A comprehensive web-based attendance tracking and management system for NCC cadets**
 
